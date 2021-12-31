@@ -105,7 +105,7 @@ function loginConfirm() {
     const userPW = $("#userPW").val();
 
     if (userID == "test" && userPW == "1234")
-        location.replace("/main");
+        location.replace("/main.html");
     else if (userID == "test")
         alert("비밀번호를 확인하세요.");
     else if (userPW == "1234")
