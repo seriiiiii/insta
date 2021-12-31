@@ -1,73 +1,79 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
-    <title>Document</title>
-    <link href="stylesheets/common.css" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/login.css" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/adobe.css" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
-  <body>
-    <div id="wrap">
-      <div class="react-spectrum-provider spectrum spectrum--lightest spectrum--medium" data-reactroot> 
-        <div class="Canvas Canvas--background-ryanlongnecker8322" data-id="Canvas">
-          <section class="Canvas-Background">
-            <div class="Canvas-Layout Canvas-Layout--only-grid Canvas-Layout--dcp-loaded Canvas-Layout--susi-loaded">
-              <div class="Canvas-Grid">
-                <section class="Canvas-Item Canvas-Panel">
-                  <div class="Route">
-                    <section class="Content">
-                      <div class="CardLayout-Container EmailPage" data-id>
-                        <div class="CardLayout-Toaster-Container">
-                          <noscript></noscript>
-                          <section class="CardLayout" style="border:1px solid #dbdbdb;">
-                            <div class="container">
-                              <img class="logo_instagram" src="images/logo_text.png" alt="instagram_logo">
-                              <input type="text" class="input_login" name="userID" id="userID" placeholder="전화번호, 사용자 이름 또는 이메일">
-                              <input type="password" class="input_login" name="userPW" id="userPW" placeholder="비밀번호">
-                              <button id="btn_login" onclick="loginConfirm()" disabled>로그인</button>
-                              <span class="button_forgot">비밀번호를 잊으셨나요?</span>
-                              <span class="sign_up">회원가입</span>
-                            </div>
-                          </section>
-                        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+  <title>Document</title>
+  <link href="stylesheets/common.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/login.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/adobe.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="react-spectrum-provider spectrum spectrum--lightest spectrum--medium" data-reactroot>
+      <div class="Canvas Canvas--background-ryanlongnecker8322" data-id="Canvas">
+        <section class="Canvas-Background">
+          <div class="Canvas-Layout Canvas-Layout--only-grid Canvas-Layout--dcp-loaded Canvas-Layout--susi-loaded">
+            <div class="Canvas-Grid">
+              <section class="Canvas-Item Canvas-Panel">
+                <div class="Route">
+                  <section class="Content">
+                    <div class="CardLayout-Container EmailPage" data-id>
+                      <div class="CardLayout-Toaster-Container">
+                        <noscript></noscript>
+                        <section class="CardLayout" style="border:1px solid #dbdbdb;">
+                          <div class="container">
+                            <img class="logo_instagram" src="images/logo_text.png" alt="instagram_logo">
+                            <input type="text" class="input_login" name="userID" id="userID"
+                              placeholder="전화번호, 사용자 이름 또는 이메일">
+                            <input type="password" class="input_login" name="userPW" id="userPW" placeholder="비밀번호">
+                            <button id="btn_login" onclick="loginConfirm()" disabled>로그인</button>
+                            <span class="button_forgot">비밀번호를 잊으셨나요?</span>
+                            <span class="sign_up">회원가입</span>
+                          </div>
+                        </section>
                       </div>
-                    </section>
-                  </div>
-                </section>
-              </div>
+                    </div>
+                  </section>
+                </div>
+              </section>
             </div>
-          </section>
-        </div>
-        <div class="img">
-          <img src="images/9364675fb26a.png" alt="no" style="width:456px; height:618px; "no-repeat center center / cover;/>
-          <img src="images/9144d6673849.jpeg" alt="no" style="width:249px; height:436px;"/>
-          <img src="images/177140221987.jpeg" alt="no" style="width:249px; height:436px;"/>
-          <img src="images/ff2c097a681e.jpeg" alt="no" style="width:249px; height:436px;"/>
-          <img src="images/b27a108592d8.jpeg" alt="no" style="width:249px; height:436px;"/>
-          <img src="images/5e04169b9308.jpeg" alt="no" style="width:249px; height:436px;"/>
-        </div>
-        <div id="popup_body" style="display:none;">
-          <div class="popup_in">
-            <h1><a href="#"><img src="images/logo_text.png" alt="no"/></a></h1>
-            <span>친구들의 사진과 동영상을 보려면 가입하세요.</span>
-            <input style="margin-top:50px;" type="text" class="input_login" name="useremail" id="useremail" placeholder="휴대폰 번호 또는 이메일 주소">
-            <input type="text" class="input_login" name="username" id="username" placeholder="성명">
-            <input type="text" class="input_login" name="userid" id="userID" placeholder="사용자 이름">
-            <input type="text" class="input_login" name="userpw" id="userpwd" placeholder="비밀번호">
-            <button id="btn_signup" onclick="loginConfirm()" disabled>가입</button>
           </div>
-          
-        </div> 
+        </section>
+      </div>
+      <div class="img">
+        <img src="images/9364675fb26a.png" alt="no" style="width:456px; height:618px; " no-repeat center center /
+          cover; />
+        <img src="images/9144d6673849.jpeg" alt="no" style="width:249px; height:436px;" />
+        <img src="images/177140221987.jpeg" alt="no" style="width:249px; height:436px;" />
+        <img src="images/ff2c097a681e.jpeg" alt="no" style="width:249px; height:436px;" />
+        <img src="images/b27a108592d8.jpeg" alt="no" style="width:249px; height:436px;" />
+        <img src="images/5e04169b9308.jpeg" alt="no" style="width:249px; height:436px;" />
+      </div>
+      <div id="popup_body" style="display:none;">
+        <div class="popup_in">
+          <h1><a href="#"><img src="images/logo_text.png" alt="no" /></a></h1>
+          <span>친구들의 사진과 동영상을 보려면 가입하세요.</span>
+          <input style="margin-top:50px;" type="text" class="input_login" name="useremail" id="useremail"
+            placeholder="휴대폰 번호 또는 이메일 주소">
+          <input type="text" class="input_login" name="username" id="username" placeholder="성명">
+          <input type="text" class="input_login" name="userid" id="userID" placeholder="사용자 이름">
+          <input type="text" class="input_login" name="userpw" id="userpwd" placeholder="비밀번호">
+          <button id="btn_signup" onclick="loginConfirm()" disabled>가입</button>
+        </div>
+
+      </div>
     </div>
-     </div>
-    <script src="javascripts/login.js" defer="defer" type="text/javascript" text="javascript"></script>
-  </body>
+  </div>
+  <script src="javascripts/login.js" defer="defer" type="text/javascript" text="javascript"></script>
+</body>
+
 </html>
