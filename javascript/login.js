@@ -9,7 +9,7 @@ const nameInput = document.getElementById('username');
 const signupBtn = document.getElementById('btn_signup');
 const linkToMain = document.getElementsByTagName('a')[0];
 /*
-id = test
+id = TEST
 pw = 1234
 */
 idInput.addEventListener('keyup', function(event) {
@@ -104,7 +104,7 @@ function loginConfirm() {
     const userID = $("#userID").val();
     const userPW = $("#userPW").val();
 
-    if (userID == "test" && userPW == "1234")
+    if (userID == "TEST" && userPW == "1234")
         location.replace("main.html");
     else if (userID == "test")
         alert("비밀번호를 확인하세요.");
