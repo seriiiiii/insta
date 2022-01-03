@@ -8,10 +8,7 @@ const pwdInput = document.getElementById('userpwd');
 const nameInput = document.getElementById('username');
 const signupBtn = document.getElementById('btn_signup');
 const linkToMain = document.getElementsByTagName('a')[0];
-/*
-id = TEST
-pw = 1234
-*/
+
 idInput.addEventListener('keyup', function(event) {
     if (idInput.value && pwInput.value) {
         loginBtn.disabled = false;
@@ -106,13 +103,14 @@ function loginConfirm() {
 
     if (userID == "TEST" && userPW == "1234")
         location.replace("main.html");
-    else if (userID == "test")
+    else if (userID == "TEST")
         alert("비밀번호를 확인하세요.");
     else if (userPW == "1234")
         alert("아이디를 확인하세요.");
     else 
         alert("아이디 또는 비밀번호를 확인하세요.");
 }
+
 
 $('.sign_up').click(function () {
     $('#popup_body').show();
